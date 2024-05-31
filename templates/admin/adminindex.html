@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback System</title>
+  <!-- Bootstrap CSS -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .jumbotron {
+      background-color: #007bff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Welcome to Feedback System</h1>
+      <p>Manage your Googleforms,Surveymonkey,Typeforms,Zendesk with ease.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Manage Googleforms</h5>
+            <p class="card-text">Add, edit, and delete Googleforms in the system.</p>
+            <a href="/Googleforms/" class="btn btn-primary">View GoogleForm</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Manage Surveymonkey</h5>
+            <p class="card-text">Add, edit, and delete Surveymonkey in the system.</p>
+            <a href="/Surveymonkey/" class="btn btn-primary">View SurveyMonkeySurvey</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Manage Typeforms</h5>
+            <p class="card-text">Add, edit, and delete Typeforms in the system.</p>
+            <a href="/Typeforms/" class="btn btn-primary">View Feedback</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>

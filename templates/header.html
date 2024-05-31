@@ -3,30 +3,25 @@
     <nav class="navbar navbar-expand-lg fixed-top myNav">
       <div class="container">
         <!-- Brand/Logo aligned to the right -->
-        <a class="navbar-brand ms-auto" href="/">College Bus Management System</a>
+        <a class="navbar-brand ms-auto" href="/">Feedback System</a>
         <!-- Navbar Toggler Button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <!-- Navbar Links aligned to the left -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/buses/">Buses</a>
+              <a class="nav-link" href="/Googleforms/">Googleform</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/drivers/">Drivers</a>
+              <a class="nav-link" href="/Surveymonkey/">SurveyMonkeySurvey</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/routes/">Routes</a>
+              <a class="nav-link" href="/Typeforms/">Feedback</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/incharges/">Incharges</a>
+              <a class="nav-link" href="/Zendesk/">ZendeskUser</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/staff/">Staff</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/students/">Students</a>
-            </li>
+            
             {% if user.is_authenticated %}
               <li class="nav-item"><a class="nav-link" href="#">Hello, {{ user.username}} {{ user_type}} </a></li>
               <li class="nav-item">

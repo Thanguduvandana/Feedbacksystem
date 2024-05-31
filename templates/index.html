@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback System</title>
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        padding-top: 70px; /* Adjust padding to accommodate the fixed navbar */
+      }
+    </style>
+  </head>
+
+  <body>
+   {% include 'header.html' %}
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Googleforms Information </h5>
+              <p class="card-text">All Googleforms Information Available Here</p>
+              <a href="/Googleforms/" class="btn btn-primary">View GoogleForm</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Surveymonkey Information</h5>
+              <p class="card-text">All Surveymonkey Information Available Here</p>
+              <a href="/Surveymonkey/" class="btn btn-primary">View SurveyMonkeySurvey</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Typeforms Information</h5>
+              <p class="card-text">All Typeforms Routes Information Available Here</p>
+              <a href="/Typeforms/" class="btn btn-primary">View Feedback</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Zendesk Information</h5>
+              <p class="card-text">All Zendesk Information Available Here</p>
+              <a href="/Zendesk/" class="btn btn-primary">View ZendeskUser</a>
+            </div>
+          </div>
+        </div>
+        
+    {% include 'footer.html' %}
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </body>
+</html>

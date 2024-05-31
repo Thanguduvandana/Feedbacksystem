@@ -15,8 +15,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
+from django.conf.urls.static import static 
+from django.conf import  settings 
+from . import views
+from .views import index,Googleforms,Surveymonkey,Typeforms,Zendesk
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name='index'),
+    path('Googleforms/', Googleforms, name='Googleforms'),
+    path('Surveymonkey/', Surveymonkey, name='Surveymonkey'),
+    path('Typeforms/', Typeforms, name='Typeforms'),
+    path('Zendesk/', Zendesk, name='Zendesk'),
+     path('accounts/', include('accounts.urls')),
+     path('forms/', views.forms, name='forms'),
+     path('Googleforms/', include('Googleforms.urls')),
 ]
+
